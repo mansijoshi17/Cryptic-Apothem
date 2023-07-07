@@ -82,7 +82,7 @@
 
 **7) Encrypted Notes:** In notes, added notes will be stored encrypted on IPFS.
 
-<img width="1423" alt="Screenshot 2023-07-06 at 11 32 48 AM" src="https://github.com/cryptbuilder/Cryptic/assets/104611242/135950a2-406d-41a0-968c-95d084505254">
+<img width="1424" alt="Screenshot 2023-07-07 at 10 53 37 AM" src="https://github.com/mansijoshi17/Cryptic-Apothem/assets/54347081/2c4e6425-f112-42ad-80be-323305e194d3">
 
 
 ### Apothem
