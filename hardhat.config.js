@@ -21,6 +21,10 @@ module.exports = {
     apothem: {
       url:'https://erpc.apothem.network',
       accounts: [PRIVATE_KEY]
+    },
+    iotex:{
+      url: `https://babel-api.testnet.iotex.io`,
+      accounts: [PRIVATE_KEY],
     }
   },
   paths: {

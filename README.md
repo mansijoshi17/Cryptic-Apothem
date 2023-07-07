@@ -35,8 +35,8 @@
 
 ### Contracts on IoTeX Testnet:
 
-**1) Cryptic Vault Contract :**  
-**2) Cryptic Agreement Contract :** 
+**1) Cryptic Vault Contract : https://testnet.iotexscan.io/address/0xb4E9407c36928545cdDE38b8E428C038009778f3#transactions**  
+**2) Cryptic Agreement Contract : https://testnet.iotexscan.io/address/0x5b3dECDA0606afF8f71a16f5d3BB43598db05AA5** 
 
 
 ## It includes:
@@ -111,6 +111,10 @@ module.exports = {
     apothem: {
       url: process.env.REACT_APP_APOTHEM_NETWORK_URL,
       accounts: [PRIVATE_KEY]
+    },
+     iotex:{
+      url: `https://babel-api.testnet.iotex.io`,
+      accounts: [PRIVATE_KEY],
     }
   },
   paths: {
