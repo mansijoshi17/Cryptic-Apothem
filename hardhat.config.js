@@ -5,6 +5,7 @@ require("./tasks");
 require("dotenv").config();
 
 const PRIVATE_KEY = process.env.REACT_APP_PRIVATE_KEY;
+console.log(PRIVATE_KEY,"process.env.REACT_APP_APOTHEM_NETWORK_URL")
 
 module.exports = {
   solidity: "0.8.4",
@@ -17,7 +18,10 @@ module.exports = {
   defaultNetwork: "",
   networks: {
     hardhat: {},
-    
+    apothem: {
+      url:'https://erpc.apothem.network',
+      accounts: [PRIVATE_KEY]
+    }
   },
   paths: {
     sources: "./contracts",

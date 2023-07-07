@@ -29,8 +29,15 @@
 
 ### Contracts on Apothem Testnet:
 
+**1) Cryptic Vault Contract : https://explorer.apothem.network/address/0x74f5aaC116a5BA54998A0A18ea17451702619A0d#transactions**  
+**2) Cryptic Agreement Contract :https://explorer.apothem.network/address/0xb6c26AB08cD10431426b1Ac53904d2971e3292CE#transactions** 
+
+
+### Contracts on IoTeX Testnet:
+
 **1) Cryptic Vault Contract :**  
 **2) Cryptic Agreement Contract :** 
+
 
 ## It includes:
 
@@ -41,10 +48,7 @@
 <img width="1428" alt="Screenshot 2023-07-06 at 11 31 29 AM" src="https://github.com/cryptbuilder/Cryptic/assets/104611242/6d4adf5b-1dfe-4176-b5e7-0cc029d2ffd7">
 
 
-**1) Crypic Sign to Agreements:** User can add agreements with sign placeholders and then can share the link with the member of that agreement. Only added whitelisted members will be able to access the link. Members will sign the agreement using that sharabale link.
-
-<img width="1424" alt="Screenshot 2023-07-06 at 11 32 59 AM" src="https://github.com/cryptbuilder/Cryptic/assets/104611242/bef07a19-6126-4414-821d-0c451ae81525">
-
+**2) Crypic Sign to Agreements:** User can add agreements with sign placeholders and then can share the link with the member of that agreement. Only added whitelisted members will be able to access the link. Members will sign the agreement using that sharabale link.
 
 <img width="1423" alt="Screenshot 2023-07-06 at 11 34 52 AM" src="https://github.com/cryptbuilder/Cryptic/assets/104611242/be2043af-d28b-424e-941a-1858d6325c39">
 
@@ -81,6 +85,39 @@
 ### Apothem
 
 ```
+
+require("@nomicfoundation/hardhat-toolbox");
+require("hardhat-deploy");
+require("hardhat-deploy-ethers");
+require("./tasks");
+require("dotenv").config();
+
+const PRIVATE_KEY = process.env.REACT_APP_PRIVATE_KEY;
+
+module.exports = {
+  solidity: "0.8.4",
+  settings: {
+    optimizer: {
+      enabled: true,
+      runs: 10000,
+    },
+  },
+  defaultNetwork: "",
+  networks: {
+    hardhat: {},
+    apothem: {
+      url: process.env.REACT_APP_APOTHEM_NETWORK_URL,
+      accounts: [PRIVATE_KEY]
+    }
+  },
+  paths: {
+    sources: "./contracts",
+    tests: "./test",
+    cache: "./cache",
+    artifacts: "./artifacts",
+  },
+};
+
 
 ```
 
